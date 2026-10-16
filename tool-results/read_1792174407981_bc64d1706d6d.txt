@@ -1,0 +1,603 @@
+     1→/**
+     2→ * ============================================================
+     3→ * SOURCE OF TRUTH — Tosif Sheraz portfolio content
+     4→ * ============================================================
+     5→ * Every fact below is drawn from the verified source materials
+     6→ * provided by Tosif Sheraz (LinkedIn profile content, Fiverr
+     7→ * profile headline & service description, professional photos).
+     8→ *
+     9→ * Rules honoured here:
+    10→ *  - No invented metrics, clients, testimonials, dates or awards.
+    11→ *  - Platform profiles linked only where the handle is verified.
+    12→ *  - Company-level work (Core Elite Experts) is kept distinct
+    13→ *    from personal freelance work.
+    14→ * ============================================================
+    15→ */
+    16→
+    17→export const profile = {
+    18→  name: "Tosif Sheraz",
+    19→  firstName: "Tosif",
+    20→  initials: "TS",
+    21→  title: "Founder & CEO, Core Elite Experts",
+    22→  roles: [
+    23→    "Entrepreneur",
+    24→    "Digital Educator",
+    25→    "DevOps & Cloud Engineer",
+    26→    "Technology Consultant",
+    27→    "Community Builder",
+    28→  ],
+    29→  headline: "I build businesses, develop talent, and engineer cloud systems that work in production.",
+    30→  intro:
+    31→    "I'm an entrepreneur and technology consultant from Gilgit-Baltistan, Pakistan. As Founder & CEO of Core Elite Experts, I help businesses modernise their infrastructure, automate delivery, and ship reliable products — and as a digital educator, I mentor young people building careers in the digital economy.",
+    32→  location: "Gilgit-Baltistan, Pakistan",
+    33→  languages: ["English", "Urdu", "Hindi"],
+    34→  availability: "Open to consulting, freelance projects, partnerships & speaking",
+    35→  portrait: "/images/tosif-portrait.png",
+    36→  portraitAlt:
+    37→    "Professional studio portrait of Tosif Sheraz wearing a navy suit and tie",
+    38→  workingShot: "/images/tosif-working.jpg",
+    39→  workingShotAlt:
+    40→    "Tosif Sheraz working with a headset at his desk, managing client communication and infrastructure tasks",
+    41→  founderShot: "/images/tosif-founder.png",
+    42→  founderShotAlt:
+    43→    "Tosif Sheraz in a navy blazer with arms crossed, photographed against a dark background",
+    44→} as const;
+    45→
+    46→/* ------------------------------------------------------------------ */
+    47→/* Verified links (handles taken directly from provided materials)     */
+    48→/* ------------------------------------------------------------------ */
+    49→export const socials = [
+    50→  {
+    51→    label: "LinkedIn",
+    52→    href: "https://www.linkedin.com/in/tosifsheraz",
+    53→    handle: "in/tosifsheraz",
+    54→    // flag: verify — inferred from provided LinkedIn profile name/handle
+    55→    verified: false,
+    56→  },
+    57→  {
+    58→    label: "Fiverr",
+    59→    href: "https://www.fiverr.com/tosifsheraz",
+    60→    handle: "@tosifsheraz",
+    61→    verified: true, // handle shown in provided Fiverr profile
+    62→  },
+    63→  {
+    64→    label: "Core Elite Experts",
+    65→    href: "https://coreeliteexperts.com/",
+    66→    handle: "coreeliteexperts.com",
+    67→    verified: true, // official URL provided
+    68→  },
+    69→] as const;
+    70→
+    71→export const platformNote =
+    72→  "Upwork profile: available on request — Upwork does not permit public profile links in all regions.";
+    73→
+    74→/* ------------------------------------------------------------------ */
+    75→/* Hero statistics — only figures stated in the source materials       */
+    76→/* ------------------------------------------------------------------ */
+    77→export const stats = [
+    78→  { value: "5,256+", label: "LinkedIn community", detail: "Followers engaging with digital-skills & technology content" },
+    79→  { value: "500+", label: "Professional connections", detail: "Founders, freelancers, recruiters & engineers" },
+    80→  { value: "3", label: "Cloud platforms", detail: "AWS · Azure · Google Cloud" },
+    81→  { value: "2", label: "Freelance marketplaces", detail: "Fiverr & Upwork client delivery" },
+    82→] as const;
+    83→
+    84→/* ------------------------------------------------------------------ */
+    85→/* Navigation                                                          */
+    86→/* ------------------------------------------------------------------ */
+    87→export const navLinks = [
+    88→  { id: "about", label: "About" },
+    89→  { id: "company", label: "Core Elite Experts" },
+    90→  { id: "services", label: "Services" },
+    91→  { id: "projects", label: "Projects" },
+    92→  { id: "freelancing", label: "Freelancing" },
+    93→  { id: "education", label: "Education" },
+    94→  { id: "skills", label: "Skills" },
+    95→  { id: "experience", label: "Experience" },
+    96→  { id: "contact", label: "Contact" },
+    97→] as const;
+    98→
+    99→/* ------------------------------------------------------------------ */
+   100→/* About — narrative built from verified biography                     */
+   101→/* ------------------------------------------------------------------ */
+   102→export const about = {
+   103→  eyebrow: "About Me",
+   104→  title: "One career, four threads — woven together on purpose.",
+   105→  paragraphs: [
+   106→    "I started in one of Pakistan's most remote and beautiful regions — Gilgit-Baltistan — with an internet connection, a laptop, and a stubborn belief that geography shouldn't decide opportunity. That belief turned into a freelance career, then into a company, and now into a mission to open the digital economy to the people around me.",
+   107→    "Today I run Core Elite Experts, a private-limited technology company serving clients internationally, while personally working as a DevOps & Cloud Engineer across AWS, Azure, and Google Cloud. Between those two worlds, I mentor aspiring freelancers on Fiverr, Upwork, LinkedIn, and practical AI tools — the exact skills that changed my own trajectory.",
+   108→    "What ties it all together is a simple operating philosophy: technology only matters when it moves a business forward, and businesses only last when they develop people along the way.",
+   109→  ],
+   110→  values: [
+   111→    {
+   112→      title: "Build, don't just plan",
+   113→      body: "Ideas earn their value in production. I ship working systems and functioning businesses, then iterate.",
+   114→    },
+   115→    {
+   116→      title: "Talent multiplies opportunity",
+   117→      body: "Every skill I learn gets taught forward. Developing people is how a single freelancer becomes an ecosystem.",
+   118→    },
+   119→    {
+   120→      title: "Reliability is the product",
+   121→      body: "Clients don't buy servers or pipelines — they buy certainty. I deliver production-ready work with clear communication.",
+   122→    },
+   123→    {
+   124→      title: "Local roots, global standards",
+   125→      body: "I operate from Gilgit-Baltistan and hold my delivery to international standards — proving both can coexist.",
+   126→    },
+   127→  ],
+   128→} as const;
+   129→
+   130→/* ------------------------------------------------------------------ */
+   131→/* Core Elite Experts — company facts from provided materials          */
+   132→/* ------------------------------------------------------------------ */
+   133→export const company = {
+   134→  eyebrow: "Founder & CEO",
+   135→  name: "Core Elite Experts",
+   136→  legalName: "Core Elite Experts Pvt Ltd",
+   137→  website: "https://coreeliteexperts.com/",
+   138→  websiteLabel: "coreeliteexperts.com",
+   139→  positioning:
+   140→    "A technology services company built to give international clients enterprise-grade delivery — and to create meaningful technology careers in Pakistan.",
+   141→  description:
+   142→    "As Founder & CEO, I lead the company's direction, client relationships, and service quality. Core Elite Experts works with businesses that need dependable cloud infrastructure, software solutions, and digital delivery — combining my engineering background with a team-based delivery model.",
+   143→  leadershipPoints: [
+   144→    "Set company strategy, service standards, and delivery quality",
+   145→    "Lead client relationships and technical scoping for projects",
+   146→    "Build and develop a team of technology professionals",
+   147→    "Represent the company with international clients and partners",
+   148→  ],
+   149→  companyServices: [
+   150→    "Cloud & DevOps engineering services",
+   151→    "Web & software development",
+   152→    "Technology consulting & project delivery",
+   153→    "Digital solutions for growing businesses",
+   154→  ],
+   155→  transparencyNote:
+   156→    "Company services are delivered through the Core Elite Experts team; my personal freelance work is listed separately below. Website content reflects the company's current public positioning.",
+   157→} as const;
+   158→
+   159→/* ------------------------------------------------------------------ */
+   160→/* Services — strictly those supported by the provided materials       */
+   161→/* ------------------------------------------------------------------ */
+   162→export type Service = {
+   163→  id: string;
+   164→  title: string;
+   165→  problem: string;
+   166→  value: string;
+   167→  deliverables: string[];
+   168→  bestFor: string;
+   169→  tags: string[];
+   170→  personal: boolean; // true = personally delivered; false = via company
+   171→};
+   172→
+   173→export const services: Service[] = [
+   174→  {
+   175→    id: "cloud-infrastructure",
+   176→    title: "Cloud Infrastructure — AWS · Azure · GCP",
+   177→    problem:
+   178→      "Your stack has outgrown hand-managed servers: deployments are risky, costs are opaque, and outages are a surprise every time.",
+   179→    value:
+   180→      "I design, deploy, and manage scalable, automated, and secure cloud systems on the three major platforms — infrastructure you can grow into, not out of.",
+   181→    deliverables: [
+   182→      "Cloud architecture & environment setup",
+   183→      "Infrastructure management on AWS / Azure / GCP",
+   184→      "Scaling, security hardening & cost awareness",
+   185→    ],
+   186→    bestFor: "Startups & SMEs needing dependable foundations",
+   187→    tags: ["AWS", "Azure", "Google Cloud"],
+   188→    personal: true,
+   189→  },
+   190→  {
+   191→    id: "containers",
+   192→    title: "Docker & Kubernetes",
+   193→    problem:
+   194→      "Apps behave differently across machines, releases are fragile, and nobody can say what's running where.",
+   195→    value:
+   196→      "I containerise applications with Docker and deploy orchestrated Kubernetes clusters with the scaling and self-healing behaviour modern products expect.",
+   197→    deliverables: [
+   198→      "Docker containerisation of applications",
+   199→      "Kubernetes cluster setup & workload orchestration",
+   200→      "Rolling updates & resilient deployments",
+   201→    ],
+   202→    bestFor: "Product teams shipping services frequently",
+   203→    tags: ["Docker", "Kubernetes"],
+   204→    personal: true,
+   205→  },
+   206→  {
+   207→    id: "cicd-gitops",
+   208→    title: "CI/CD Pipelines & GitOps",
+   209→    problem:
+   210→      "Releases depend on one person's memory, take hours, and occasionally break a Friday evening.",
+   211→    value:
+   212→      "I build CI/CD pipelines and GitOps workflows so every commit travels safely from version control to production — repeatable, reviewable, and boring in the best way.",
+   213→    deliverables: [
+   214→      "End-to-end build, test & deploy pipelines",
+   215→      "GitOps deployment workflows",
+   216→      "Release automation & rollback safety",
+   217→    ],
+   218→    bestFor: "Teams that want fast, fear-free releases",
+   219→    tags: ["CI/CD", "GitOps", "Automation"],
+   220→    personal: true,
+   221→  },
+   222→  {
+   223→    id: "devops-troubleshooting",
+   224→    title: "DevOps Troubleshooting & Rescue",
+   225→    problem:
+   226→      "Something is broken — a pipeline, a cluster, a Git repository, a cloud resource — and your team needs it fixed now.",
+   227→    value:
+   228→      "I diagnose and fix Git, container, pipeline, and cloud issues quickly, then leave behind documentation so the same problem doesn't return.",
+   229→    deliverables: [
+   230→      "Git & repository issue resolution",
+   231→      "Pipeline & deployment debugging",
+   232→      "Cloud resource & configuration fixes",
+   233→    ],
+   234→    bestFor: "Teams blocked by an urgent technical issue",
+   235→    tags: ["Troubleshooting", "Git", "Recovery"],
+   236→    personal: true,
+   237→  },
+   238→  {
+   239→    id: "web-software",
+   240→    title: "Web & Software Solutions",
+   241→    problem:
+   242→      "Your business needs a dependable digital presence or custom software — not a template that falls over in six months.",
+   243→    value:
+   244→      "Through Core Elite Experts, my company plans, builds, and delivers web and software solutions with a team-based delivery model and accountable project management.",
+   245→    deliverables: [
+   246→      "Business websites & web applications",
+   247→      "Custom software development",
+   248→      "Ongoing maintenance & support",
+   249→    ],
+   250→    bestFor: "Businesses wanting a partner, not just a coder",
+   251→    tags: ["Web", "Software", "Delivery"],
+   252→    personal: false,
+   253→  },
+   254→  {
+   255→    id: "consulting",
+   256→    title: "Technology Consulting",
+   257→    problem:
+   258→      "You're making expensive technology decisions with incomplete information — tooling, hosting, hiring, or roadmapping.",
+   259→    value:
+   260→      "I bring a business-first lens to technical decisions: what to build, what to buy, what to automate, and in what order — grounded in hands-on delivery experience.",
+   261→    deliverables: [
+   262→      "Technical decision support & architecture reviews",
+   263→      "Automation & delivery-process assessment",
+   264→      "Practical, prioritised roadmaps",
+   265→    ],
+   266→    bestFor: "Founders & leaders without in-house CTO coverage",
+   267→    tags: ["Strategy", "Architecture", "Automation"],
+   268→    personal: true,
+   269→  },
+   270→  {
+   271→    id: "training",
+   272→    title: "Digital Skills Training & Freelancing Mentorship",
+   273→    problem:
+   274→      "Talented people around you want to earn online but lack a map: which platform, which skill, which first step.",
+   275→    value:
+   276→      "I train and mentor individuals and groups on freelancing platforms, personal branding, and practical digital tools — the same playbook I used to build my own career.",
+   277→    deliverables: [
+   278→      "Fiverr & Upwork start-up mentoring",
+   279→      "LinkedIn personal-branding coaching",
+   280→      "AI tools & digital-skills workshops",
+   281→    ],
+   282→    bestFor: "Beginners, students & career-switchers",
+   283→    tags: ["Training", "Mentorship", "Digital Skills"],
+   284→    personal: true,
+   285→  },
+   286→] as const;
+   287→
+   288→/* ------------------------------------------------------------------ */
+   289→/* Projects — representative engagement types actually delivered via  */
+   290→/* the provided Fiverr service description. No invented clients,       */
+   291→/* metrics, or screenshots.                                            */
+   292→/* ------------------------------------------------------------------ */
+   293→export type Project = {
+   294→  id: string;
+   295→  title: string;
+   296→  category: string;
+   297→  summary: string;
+   298→  challenge: string;
+   299→  role: string;
+   300→  approach: string;
+   301→  stack: string[];
+   302→  outcome: string;
+   303→};
+   304→
+   305→export const projectCategories = ["All", "Cloud", "DevOps", "Automation", "Web"] as const;
+   306→
+   307→export const projects: Project[] = [
+   308→  {
+   309→    id: "k8s-clusters",
+   310→    title: "Kubernetes Cluster Deployment & Orchestration",
+   311→    category: "Cloud",
+   312→    summary:
+   313→      "Production-grade Kubernetes clusters with orchestrated, self-healing workloads for client applications.",
+   314→    challenge:
+   315→      "Clients running containerised services manually faced inconsistent environments and downtime during releases.",
+   316→    role: "End-to-end setup and configuration of cluster infrastructure and workloads.",
+   317→    approach:
+   318→      "Designed cluster topology, containerised services, configured deployments and services, and validated resilience under scaling and failure conditions.",
+   319→    stack: ["Kubernetes", "Docker", "Cloud Networking"],
+   320→    outcome:
+   321→      "Delivered stable, production-ready clusters where workloads scale and recover automatically — a repeatable setup now reused across engagements.",
+   322→  },
+   323→  {
+   324→    id: "cicd-pipelines",
+   325→    title: "End-to-End CI/CD Pipeline Automation",
+   326→    category: "DevOps",
+   327→    summary:
+   328→      "Automated pipelines taking client code from commit to production with build, test, and deploy stages.",
+   329→    challenge:
+   330→      "Manual releases were slow, error-prone, and dependent on individual team members' availability.",
+   331→    role: "Pipeline architecture, implementation, and handover documentation.",
+   332→    approach:
+   333→      "Built staged pipelines (build → test → deploy), integrated version-control triggers, and added rollback paths so failed releases recover in minutes, not hours.",
+   334→    stack: ["CI/CD", "Git", "Automation Tools"],
+   335→    outcome:
+   336→      "Clients moved from hand-run deployments to push-button releases with consistent, reviewable delivery every time.",
+   337→  },
+   338→  {
+   339→    id: "multicloud-infra",
+   340→    title: "Multi-Cloud Infrastructure Management — AWS & Azure",
+   341→    category: "Cloud",
+   342→    summary:
+   343→      "Day-to-day management of client infrastructure across AWS and Azure with security and reliability focus.",
+   344→    challenge:
+   345→      "Growing businesses needed their cloud environments managed professionally without hiring a full in-house platform team.",
+   346→    role: "Ongoing infrastructure management and optimisation as a retained freelancer.",
+   347→    approach:
+   348→      "Standardised resource configuration, applied security best practices, monitored workloads, and kept environments documented and recoverable.",
+   349→    stack: ["AWS", "Azure", "Cloud Security"],
+   350→    outcome:
+   351→      "Client environments became predictable and auditable — with infrastructure handled proactively instead of reactively.",
+   352→  },
+   353→  {
+   354→    id: "gitops-workflows",
+   355→    title: "GitOps Workflow Implementation",
+   356→    category: "Automation",
+   357→    summary:
+   358→      "Git-driven deployment workflows where the repository is the single source of truth for production state.",
+   359→    challenge:
+   360→      "Teams had configuration drift between environments and no clear audit trail of who changed what.",
+   361→    role: "GitOps adoption, workflow design, and team onboarding.",
+   362→    approach:
+   363→      "Aligned deployment flows with version control so every change is reviewed, traceable, and reversible — then trained client teams to operate it confidently.",
+   364→    stack: ["GitOps", "Git", "CI/CD"],
+   365→    outcome:
+   366→      "Deployment changes became transparent and auditable, eliminating drift and the blame game that came with it.",
+   367→  },
+   368→  {
+   369→    id: "docker-containerisation",
+   370→    title: "Application Containerisation with Docker",
+   371→    category: "DevOps",
+   372→    summary:
+   373→      "Legacy and modern applications packaged into portable, consistent Docker containers.",
+   374→    challenge:
+   375→      "Applications that worked on one machine failed on another, and environment setup ate days of engineering time.",
+   376→    role: "Containerisation strategy and Docker implementation.",
+   377→    approach:
+   378→      "Analysed application dependencies, wrote production-grade Docker configurations, and verified identical behaviour across development, staging, and production.",
+   379→    stack: ["Docker", "Linux", "Compose"],
+   380→    outcome:
+   381→      "Portable applications with one-command setup — environment bugs dropped dramatically for client teams.",
+   382→  },
+   383→  {
+   384→    id: "client-web-presence",
+   385→    title: "Business Websites & Digital Presence Delivery",
+   386→    category: "Web",
+   387→    summary:
+   388→      "Web solutions delivered for clients through Core Elite Experts' team-based model.",
+   389→    challenge:
+   390→      "Small businesses needed professional, dependable web presences and a partner who could also advise on hosting and infrastructure.",
+   391→    role: "Company leadership: scoping, quality standards, and client communication.",
+   392→    approach:
+   393→      "Combined in-house web development with my infrastructure background — sites deployed on properly configured, secure hosting rather than an afterthought.",
+   394→    stack: ["Web Development", "Hosting", "Team Delivery"],
+   395→    outcome:
+   396→      "Clients received complete packages: the website itself plus the infrastructure underneath it, from one accountable team.",
+   397→  },
+   398→] as const;
+   399→
+   400→export const projectsNote =
+   401→  "These represent the core engagement types I deliver through Fiverr, Upwork, and Core Elite Experts. Client confidentiality is respected — detailed case studies and references are available on request.";
+   402→
+   403→/* ------------------------------------------------------------------ */
+   404→/* Freelancing — from the provided Fiverr profile & positioning        */
+   405→/* ------------------------------------------------------------------ */
+   406→export const freelancing = {
+   407→  eyebrow: "Freelancing & Client Work",
+   408→  title: "Platform-tested delivery, on two marketplaces.",
+   409→  intro:
+   410→    "My freelance career runs through Fiverr and Upwork, where I deliver DevOps and cloud engineering work for international clients — from full platform setups to urgent rescues of broken infrastructure.",
+   411→  fiverrTitle:
+   412→    "DevOps Engineer — AWS, Azure, Docker, Kubernetes, CI/CD, GitOps",
+   413→  fiverrAbout:
+   414→    "I design and deploy scalable, automated, and secure cloud systems — from Docker containers and Kubernetes clusters to CI/CD pipelines, AWS/Azure infrastructure management, and Git or cloud issue resolution.",
+   415→  workTypes: [
+   416→    "Full DevOps environment setup",
+   417→    "Docker & Kubernetes deployments",
+   418→    "CI/CD pipeline construction",
+   419→    "AWS & Azure infrastructure management",
+   420→    "Git & cloud issue troubleshooting",
+   421→    "Automation & deployment workflows",
+   422→  ],
+   423→  approach: [
+   424→    {
+   425→      title: "Requirements before estimates",
+   426→      body: "Every engagement starts with understanding what 'done' means for the client — scope agreed in writing before work begins.",
+   427→    },
+   428→    {
+   429→      title: "Communication you can set your watch to",
+   430→      body: "Proactive updates, honest timelines, and early warnings. Clients never chase me for status.",
+   431→    },
+   432→    {
+   433→      title: "Production-ready means production-ready",
+   434→      body: "Work is delivered documented, verified, and handover-ready — not 'works on my machine'.",
+   435→    },
+   436→    {
+   437→      title: "Relationships over transactions",
+   438→      body: "Most of my work comes from clients who return. I optimise for the second project, not the first payment.",
+   439→    },
+   440→  ],
+   441→} as const;
+   442→
+   443→/* ------------------------------------------------------------------ */
+   444→/* Digital education & community — from verified positioning           */
+   445→/* ------------------------------------------------------------------ */
+   446→export const education = {
+   447→  eyebrow: "Digital Education & Mentorship",
+   448→  title: "The skills that changed my life should be teachable.",
+   449→  intro:
+   450→    "Freelancing rebuilt my own future — so I teach others how to build theirs. I mentor aspiring freelancers and young professionals on the practical skills the digital economy actually rewards.",
+   451→  focusAreas: [
+   452→    {
+   453→      title: "Freelancing Foundations",
+   454→      body: "Getting started on Fiverr & Upwork: profiles, first gigs, proposals, pricing, and winning that difficult first order.",
+   455→    },
+   456→    {
+   457→      title: "LinkedIn & Personal Branding",
+   458→      body: "Building a professional presence that attracts clients and recruiters — the same approach behind my 5,256+ follower community.",
+   459→    },
+   460→    {
+   461→      title: "AI Tools & Productivity",
+   462→      body: "Practical, honest use of AI tools in daily workflows — where they genuinely help and where they waste your time.",
+   463→    },
+   464→    {
+   465→      title: "Digital Career Strategy",
+   466→      body: "Choosing a skill, building a portfolio, and turning platform work into a durable career rather than pocket money.",
+   467→    },
+   468→  ],
+   469→  community: {
+   470→    eyebrow: "Leadership & Community Impact",
+   471→    title: "Building the ecosystem I wished existed.",
+   472→    points: [
+   473→      {
+   474→        title: "A growing digital community",
+   475→        body: "A LinkedIn community of 5,256+ followers, built by sharing what actually works in freelancing, technology, and digital careers.",
+   476→      },
+   477→      {
+   478→        title: "Opportunity creation in Gilgit-Baltistan",
+   479→        body: "Proving from Pakistan's northern regions that global digital work is achievable — and showing the path to those who follow.",
+   480→      },
+   481→      {
+   482→        title: "Founder-led job creation",
+   483→        body: "Core Elite Experts is structured to create technology careers at home while serving clients abroad.",
+   484→      },
+   485→      {
+   486→        title: "Collaboration over gatekeeping",
+   487→        body: "Openly sharing knowledge, playbooks, and honest guidance with peers, students, and aspiring freelancers.",
+   488→      },
+   489→    ],
+   490→  },
+   491→} as const;
+   492→
+   493→/* ------------------------------------------------------------------ */
+   494→/* Skills — only tools/areas evidenced in provided materials           */
+   495→/* ------------------------------------------------------------------ */
+   496→export const skillGroups = [
+   497→  {
+   498→    title: "Cloud Platforms",
+   499→    skills: ["AWS", "Microsoft Azure", "Google Cloud Platform"],
+   500→  },
+   501→  {
+   502→    title: "DevOps & Automation",
+   503→    skills: ["Docker", "Kubernetes", "CI/CD", "GitOps", "Git", "Terraform", "Linux"],
+   504→  },
+   505→  {
+   506→    title: "Business & Leadership",
+   507→    skills: ["Entrepreneurship", "Business Development", "Client Relations", "Team Leadership", "Project Delivery"],
+   508→  },
+   509→  {
+   510→    title: "Freelancing & Client Management",
+   511→    skills: ["Fiverr", "Upwork", "Proposals & Bidding", "Client Communication", "Requirements Scoping"],
+   512→  },
+   513→  {
+   514→    title: "Education & Mentoring",
+   515→    skills: ["Freelancing Mentorship", "LinkedIn Coaching", "Digital Skills Training", "AI Tools"],
+   516→  },
+   517→  {
+   518→    title: "Languages",
+   519→    skills: ["English", "Urdu", "Hindi"],
+   520→  },
+   521→] as const;
+   522→
+   523→/* ------------------------------------------------------------------ */
+   524→/* Experience & education — only verified entries, no invented dates   */
+   525→/* ------------------------------------------------------------------ */
+   526→export const experience = [
+   527→  {
+   528→    title: "Founder & CEO",
+   529→    org: "Core Elite Experts Pvt Ltd",
+   530→    type: "Entrepreneurship",
+   531→    period: "Present",
+   532→    points: [
+   533→      "Leading a private-limited technology company serving international clients",
+   534→      "Directing strategy, service quality, and client relationships",
+   535→      "Building a team delivering cloud, web, and digital solutions",
+   536→    ],
+   537→  },
+   538→  {
+   539→    title: "DevOps & Cloud Engineer",
+   540→    org: "Fiverr & Upwork — International Clients",
+   541→    type: "Freelance",
+   542→    period: "Ongoing",
+   543→    points: [
+   544→      "Delivering AWS, Azure, Docker, Kubernetes, CI/CD, and GitOps engagements",
+   545→      "Handling full environment setups and urgent production troubleshooting",
+   546→    ],
+   547→  },
+   548→  {
+   549→    title: "Digital Educator & Freelancing Mentor",
+   550→    org: "Community & Online Programs",
+   551→    type: "Education",
+   552→    period: "Ongoing",
+   553→    points: [
+   554→      "Mentoring aspiring freelancers on Fiverr, Upwork, LinkedIn, and AI tools",
+   555→      "Building a 5,256+ follower community around digital skills",
+   556→    ],
+   557→  },
+   558→] as const;
+   559→
+   560→export const educationHistory = [
+   561→  {
+   562→    institution: "Virtual University of Pakistan",
+   563→    detail: "Higher education — technology & business foundations",
+   564→  },
+   565→] as const;
+   566→
+   567→/* ------------------------------------------------------------------ */
+   568→/* Contact — inquiry types & form config. NO invented email/phone.     */
+   569→/* ------------------------------------------------------------------ */
+   570→export const inquiryTypes = [
+   571→  "Business Inquiry",
+   572→  "Technology Consulting",
+   573→  "Freelance Project",
+   574→  "Partnership",
+   575→  "Training & Speaking",
+   576→  "Professional Networking",
+   577→] as const;
+   578→
+   579→export const contactChannels = [
+   580→  {
+   581→    title: "Location",
+   582→    primary: "Gilgit-Baltistan, Pakistan",
+   583→    secondary: "Working with clients internationally",
+   584→  },
+   585→  {
+   586→    title: "Fastest Channels",
+   587→    primary: "LinkedIn or Fiverr messages",
+   588→    secondary: "For project inquiries, use the form — it reaches me directly",
+   589→  },
+   590→  {
+   591→    title: "Working Languages",
+   592→    primary: "English · Urdu · Hindi",
+   593→    secondary: "Client communication in English",
+   594→  },
+   595→] as const;
+   596→
+   597→export const footer = {
+   598→  blurb:
+   599→    "Founder & CEO of Core Elite Experts. Building businesses, developing talent, and engineering reliable cloud systems from Gilgit-Baltistan to the world.",
+   600→  copyright: `© ${new Date().getFullYear()} Tosif Sheraz. All rights reserved.`,
+   601→  builtWith: "Designed & engineered with intent — Next.js, TypeScript & Tailwind CSS",
+   602→} as const;
+   603→
